@@ -1,0 +1,14 @@
+@use 'vars' as *;
+
+#header-top{
+  background-color: $primary;
+  color: white;
+  padding: 10px 0;
+  font-size: 12px;
+  font-style: bold;
+  text-align: end;
+
+  span{
+    margin-left: 50px;
+  }
+}

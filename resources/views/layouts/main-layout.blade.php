@@ -11,7 +11,11 @@
 </head>
 
 <body>
-    <h1>test</h1>
+    @include('includes.header.header')
+    <main>
+        @yield('main-content')
+    </main>
+    @include('includes.footer.footer')
 </body>
 
 </html>
