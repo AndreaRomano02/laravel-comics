@@ -22,35 +22,35 @@ Route::get('/comics', function () {
 })->name('comics');
 
 Route::get('/movie', function () {
-  return view('home');
+  return view('movie');
 })->name('movie');
 
 Route::get('/tv', function () {
-  return view('home');
+  return view('tv');
 })->name('tv');
 
 Route::get('/games', function () {
-  return view('home');
+  return view('games');
 })->name('games');
 
 Route::get('/collectibles', function () {
-  return view('home');
+  return view('collectibles');
 })->name('collectibles');
 
 Route::get('/videos', function () {
-  return view('home');
+  return view('videos');
 })->name('videos');
 
 Route::get('/fans', function () {
-  return view('home');
+  return view('fans');
 })->name('fans');
 
 Route::get('/news', function () {
-  return view('home');
+  return view('news');
 })->name('news');
 
 Route::get('/shop', function () {
-  return view('home');
+  return view('shop');
 })->name('shop');
 
 Route::get('/single-comic', function () {
