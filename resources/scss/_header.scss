@@ -1,4 +1,10 @@
 @use 'vars' as *;
+.active {
+  color: $primary;
+  border-bottom: 7px solid $primary;
+  padding-bottom: 45px;
+}
+
 
 #header-top{
   background-color: $primary;
