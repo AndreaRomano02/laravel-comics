@@ -12,3 +12,47 @@
     margin-left: 50px;
   }
 }
+
+#header-menu{
+  height: 120px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+
+  img{
+    display: block;
+    margin: 20px 0;
+  }
+  
+  nav{
+
+    ul{
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      font-weight: bold;
+      li:hover{
+        color: $primary;
+      }
+    }
+  }
+
+  .search-bar{
+    border-bottom: 3px solid $primary;
+    flex-shrink: 0;
+
+    input{
+      border: none;
+      padding: 10px;
+      flex-shrink: 0;
+
+      &::placeholder{
+        text-align: end;
+        font-size: 1rem;
+        font-weight: bold;
+        
+        
+      }
+    }
+  }
+}
