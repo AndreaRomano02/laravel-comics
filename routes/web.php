@@ -18,7 +18,7 @@ Route::get('/', function () {
 })->name('characters');
 
 Route::get('/comics', function () {
-  return view('home');
+  return view('comics');
 })->name('comics');
 
 Route::get('/movie', function () {
