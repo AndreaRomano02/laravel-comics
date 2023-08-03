@@ -52,3 +52,7 @@ Route::get('/news', function () {
 Route::get('/shop', function () {
   return view('home');
 })->name('shop');
+
+Route::get('/single-comic', function () {
+  return view('single-comic');
+})->name('single-comic');

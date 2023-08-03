@@ -10,12 +10,14 @@
 
             @foreach ($comics as $comic)
                 <div class="card">
-                    <figure>
-                        <div class="img-container">
-                            <img src="{{ $comic['thumb'] }}" alt="game">
-                        </div>
-                        <figcaption>{{ $comic['series'] }}</figcaption>
-                    </figure>
+                    <a href="/single-comic">
+                        <figure>
+                            <div class="img-container">
+                                <img src="{{ $comic['thumb'] }}" alt="game">
+                            </div>
+                            <figcaption>{{ $comic['series'] }}</figcaption>
+                        </figure>
+                    </a>
                 </div>
             @endforeach
         </div>
