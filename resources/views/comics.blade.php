@@ -3,6 +3,9 @@
 @endphp
 
 @extends('layouts.main-layout')
+
+@section('page-title', 'Comics')
+
 @section('main-content')
     <section id="comics">
         <div class="container card-container">

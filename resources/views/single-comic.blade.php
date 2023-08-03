@@ -1,4 +1,7 @@
 @extends('layouts.main-layout')
+
+@section('page-title', 'Single Comic')
+
 @section('main-content')
     <section id="single-comic" class="container">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae vitae veniam animi dicta amet tempora
