@@ -49,10 +49,13 @@
       &::placeholder{
         text-align: end;
         font-size: 1rem;
-        font-weight: bold;
-        
-        
+        font-weight: bold;        
       }
     }
   }
+}
+
+#jumbotron{
+  height: 400px;
+  background-image: url('../img/jumbotron.jpg');
 }
