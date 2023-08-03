@@ -1,0 +1,29 @@
+#bg-top-foot {
+  height: calc(100vh - 480px);
+  background-image: url('../img/dc-logo-bg.png'), url('../img/footer-bg.jpg');
+  background-repeat: no-repeat, no-repeat;
+  background-size: 600px, cover;
+  background-position: center;
+  background-position-x: 1000px, 0;
+  color: white;
+  
+  .footer-top {
+    display: flex;
+    padding-top: 45px;
+    gap: 40px;
+    
+    
+    h3 {
+      margin: 10px 0;
+    }
+    
+  li {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+}
