@@ -1,7 +1,3 @@
-@php
-    $comics = config('comics');
-@endphp
-
 @extends('layouts.main-layout')
 
 @section('page-title', 'Comics')
@@ -13,7 +9,7 @@
 
             @foreach ($comics as $comic)
                 <div class="card">
-                    <a href="/single-comic">
+                    <a href="/comic">
                         <figure>
                             <div class="img-container">
                                 <img src="{{ $comic['thumb'] }}" alt="game">

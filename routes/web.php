@@ -18,8 +18,18 @@ Route::get('/', function () {
 })->name('characters');
 
 Route::get('/comics', function () {
-  return view('comics');
+  $comics = config('comics');
+
+  return view('comics', compact('comics'));
 })->name('comics');
+
+Route::get('/comic', function () {
+  $comics = config('comics');
+
+  $comic = $comics[0];
+
+  return view('comic', compact('comic'));
+})->name('comic');
 
 Route::get('/movie', function () {
   return view('movie');
@@ -52,7 +62,3 @@ Route::get('/news', function () {
 Route::get('/shop', function () {
   return view('shop');
 })->name('shop');
-
-Route::get('/single-comic', function () {
-  return view('single-comic');
-})->name('single-comic');
