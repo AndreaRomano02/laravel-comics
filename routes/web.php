@@ -23,10 +23,12 @@ Route::get('/comics', function () {
   return view('comics', compact('comics'));
 })->name('comics');
 
-Route::get('/comic', function () {
+Route::get('/comic/{index}', function ($index) {
   $comics = config('comics');
 
-  $comic = $comics[0];
+  if (!is_numeric($index) || $index < 0 || $index > count($comics)) abort(404);
+
+  $comic = $comics[$index];
 
   return view('comic', compact('comic'));
 })->name('comic');

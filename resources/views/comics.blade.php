@@ -9,7 +9,7 @@
 
             @foreach ($comics as $comic)
                 <div class="card">
-                    <a href="/comic">
+                    <a href="{{ route('comic', ['index' => $loop->index]) }}">
                         <figure>
                             <div class="img-container">
                                 <img src="{{ $comic['thumb'] }}" alt="game">
